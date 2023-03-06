@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beware</title>
+    <link rel="stylesheet" href="css/home.css">
+    <script src="https://kit.fontawesome.com/95346ea11f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="nav">
+        <i class="fa-sharp fa-solid fa-bars"></i>
+    </div>
+    <div class="con">
+        <!--Page 1 Home -->
+        <div class="col hm" style="display: noe;" id="hm">
+            <div class="hmt">
+                <center>
+                <button type="button" id="btn" class="btn" onclick="">
+                    <span>SOS</span>
+                </button>
+                </center>
+            </div>
+            <div class="hmb">
+                <ul>
+                <li><a>Home</a></li>
+                <li><a href="main.html">News</a></li>
+                <br><br>
+                <li><a>Safe Travel</a></li>
+                <li><a>Contacts</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--Page 1 End Completed-->
+        <!--Page 2 Map -->
+        <div class="col mp" id="mp">
+            <div id="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3915.4045777637207!2d76.99522416382514!3d11.08319470648924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8f792636f82b5%3A0xdc86449e9fb48675!2sKGiSL%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1678098753861!5m2!1sen!2sin" width="350" height="750" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <!--Page 2 Map Completed-->
+    </div>
+    <div class="foot">
+        <center>
+        <ul>
+            <li><a onclick=" pg(0)"><i class="fa-solid fa-house"></i></a></li>
+            <li><a onclick=" pg(1)"><i class="fa-solid fa-location-dot"></i></a></li>
+            <li><a onclick=" pg(2)"><i class="fa-solid fa-triangle-exclamation"></i></a></li>
+            <li><a onclick=" pg(3)"><i class="fa-solid fa-circle-info"></i></a></li>
+            <li><a onclick=" pg(4)">+</a></li>
+        </ul>
+        </center>
+    </div>
+    <script>
+        var pg = document.getElementsByClassName("col");
+        console.log(pg)
+         function pg(a){
+            for i in range(0,pg.length){
+                console.log(i)
+                if(i == a){
+                    pg[i].style.display = "block";
+                }
+                else{
+                    pg[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+</body>
+</html>
